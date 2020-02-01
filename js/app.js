@@ -169,7 +169,36 @@ document.addEventListener('swiped-up', function(e) {
 });
 
 //listen for swipe left
+document.addEventListener('swiped-left', function(e) {
+	console.log(e.type);
+	console.log(e.target);
+	e.target.innerHTML = e.type;
+	player.handleInput('left');
+});
+
+//listen for swipe down
+document.addEventListener('swiped-down', function(e) {
+	console.log(e.type);
+	console.log(e.target);
+	e.target.innerHTML = e.type;
+	player.handleInput('down');
+});
+
+//listen for swipe right
+document.addEventListener('swiped-right', function(e) {
+	console.log(e.type);
+	console.log(e.target);
+	e.target.innerHTML = e.type;
+	player.handleInput('right');
+});
+
+//listen for click
 document.addEventListener('click', function(e) {
+	player.handleInput('enter');
+});
+
+//listen for click
+document.addEventListener('touchstart', function(e) {
 	player.handleInput('enter');
 });
 
