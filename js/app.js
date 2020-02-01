@@ -164,7 +164,7 @@ document.addEventListener
 document.addEventListener('swiped-up', function(e) {
 	console.log(e.type);
 	console.log(e.target);
-	e.target.innerHTML = e.type;
+	//e.target.innerHTML = e.type;
 	player.handleInput('up');
 });
 
@@ -172,7 +172,7 @@ document.addEventListener('swiped-up', function(e) {
 document.addEventListener('swiped-left', function(e) {
 	console.log(e.type);
 	console.log(e.target);
-	e.target.innerHTML = e.type;
+	//e.target.innerHTML = e.type;
 	player.handleInput('left');
 });
 
@@ -180,7 +180,7 @@ document.addEventListener('swiped-left', function(e) {
 document.addEventListener('swiped-down', function(e) {
 	console.log(e.type);
 	console.log(e.target);
-	e.target.innerHTML = e.type;
+	//e.target.innerHTML = e.type;
 	player.handleInput('down');
 });
 
@@ -188,19 +188,19 @@ document.addEventListener('swiped-down', function(e) {
 document.addEventListener('swiped-right', function(e) {
 	console.log(e.type);
 	console.log(e.target);
-	e.target.innerHTML = e.type;
+	//e.target.innerHTML = e.type;
 	player.handleInput('right');
 });
 
 //listen for click
 document.addEventListener('click', function(e) {
-	e.target.innerHTML = 'click';
+	//e.target.innerHTML = 'click';
 	player.handleInput('enter');
 });
 
 //listen for click
 document.addEventListener('touchstart', function(e) {
-	e.target.innerHTML = 'touchstart';
+	//e.target.innerHTML = 'touchstart';
 	//player.handleInput('enter');
 });
 
