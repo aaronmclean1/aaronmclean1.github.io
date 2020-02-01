@@ -194,11 +194,13 @@ document.addEventListener('swiped-right', function(e) {
 
 //listen for click
 document.addEventListener('click', function(e) {
+	e.target.innerHTML = 'click';
 	player.handleInput('enter');
 });
 
 //listen for click
 document.addEventListener('touchstart', function(e) {
+	e.target.innerHTML = 'touchstart';
 	player.handleInput('enter');
 });
 
