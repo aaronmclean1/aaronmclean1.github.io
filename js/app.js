@@ -165,7 +165,7 @@ document.addEventListener('swiped-up', function(e) {
 	console.log(e.type);
 	console.log(e.target);
 	e.target.innerHTML = e.type;
-	player.handleInput('enter');
+	player.handleInput('up');
 });
 
 //listen for swipe left
@@ -201,6 +201,6 @@ document.addEventListener('click', function(e) {
 //listen for click
 document.addEventListener('touchstart', function(e) {
 	e.target.innerHTML = 'touchstart';
-	player.handleInput('enter');
+	//player.handleInput('enter');
 });
 
