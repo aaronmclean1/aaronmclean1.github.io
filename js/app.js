@@ -165,7 +165,7 @@ document.addEventListener('swiped-up', function(e) {
 	console.log(e.type);
 	console.log(e.target);
 	e.target.innerHTML = e.type;
-	player.handleInput('up');
+	player.handleInput('enter');
 });
 
 //listen for swipe left
