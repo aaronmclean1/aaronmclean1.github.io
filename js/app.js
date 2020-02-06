@@ -160,7 +160,11 @@ document.addEventListener
 	}
 );
 
-//listen for swipe left
+document.getElementById("startButton").addEventListener("click", function(){
+	player.handleInput('enter');
+});
+
+//listen for swipe up
 document.addEventListener('swiped-up', function(e) {
 	console.log(e.type);
 	console.log(e.target);
@@ -193,14 +197,14 @@ document.addEventListener('swiped-right', function(e) {
 });
 
 //listen for click
-document.addEventListener('click', function(e) {
+//document.addEventListener('click', function(e) {
 	//e.target.innerHTML = 'click';
-	player.handleInput('enter');
-});
+	//player.handleInput('enter');
+//});
 
 //listen for click
-document.addEventListener('touchstart', function(e) {
+//document.addEventListener('touchstart', function(e) {
 	//e.target.innerHTML = 'touchstart';
 	//player.handleInput('enter');
-});
+//});
 
