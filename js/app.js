@@ -178,6 +178,10 @@ document.getElementById("quitButton").addEventListener("click", function(){
 	player.handleInput('quit');
 });
 
+document.getElementById("upButton").addEventListener("click", function(){
+	player.handleInput('up');
+});
+
 //listen for swipe up
 document.addEventListener('swiped-up', function(e) {
 	console.log(e.type);
