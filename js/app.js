@@ -136,9 +136,9 @@ Player.prototype.handleInput = function (key)
 		//used to quit and restart game
 		case 'quit':
 			pickPlayer = true;
-			this.player.y = 5;
-			player.lives = 3;
-			player.level = 1;
+			this.y = 5;
+			this.lives = 3;
+			this.level = 1;
 			break;
 		default:
 			break;
