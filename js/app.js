@@ -164,6 +164,10 @@ document.getElementById("startButton").addEventListener("click", function(){
 	player.handleInput('enter');
 });
 
+document.getElementById("quitButton").addEventListener("click", function(){
+	player.handleInput('quit');
+});
+
 //listen for swipe up
 document.addEventListener('swiped-up', function(e) {
 	console.log(e.type);
