@@ -128,6 +128,10 @@ Player.prototype.handleInput = function (key)
 			this.y = 5;
 			this.sprite = characterPngs[this.x];
 			break;
+		//used to pause the game
+		case 'pause':
+			alert('This Game is Paused! Click OK to Resume the Game.');
+			break;
 		//used to quit and restart game
 		case 'quit':
 			pickPlayer = true;
