@@ -130,7 +130,7 @@ Player.prototype.handleInput = function (key)
 			break;
 		//used to pause the game
 		case 'pause':
-			alert('This Game is Paused! Click OK to Resume the Game.');
+			alert('CAT PAUSE!!! :)');
 			break;
 		//used to quit and restart game
 		case 'quit':
@@ -166,6 +166,10 @@ document.addEventListener
 
 document.getElementById("startButton").addEventListener("click", function(){
 	player.handleInput('enter');
+});
+
+document.getElementById("pauseButton").addEventListener("click", function(){
+	player.handleInput('pause');
 });
 
 document.getElementById("quitButton").addEventListener("click", function(){
